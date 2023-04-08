@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #4A98F7;
+    background: #4a98f7;
 }
 
 .container {
@@ -56,12 +56,12 @@ section {
 
 .option :where(span, label) {
     cursor: pointer;
-    color: #5A6168;
+    color: #5a6168;
     padding-left: 10px;
 }
 
 .option:is(:hover, .active) :where(span, label) {
-    color: #4A98F7;
+    color: #4a98f7;
 }
 
 .option #fill-color {
@@ -71,7 +71,7 @@ section {
 }
 
 #fill-color:checked~label {
-    color: #4A98F7;
+    color: #4a98f7;
 }
 
 .option #size-slider {
@@ -103,15 +103,15 @@ section {
 }
 
 .colors .option:nth-child(3) {
-    background: #E02020;
+    background: #e02020;
 }
 
 .colors .option:nth-child(4) {
-    background: #6DD400;
+    background: #6dd400;
 }
 
 .colors .option:nth-child(5) {
-    background: #4A98F7;
+    background: #4a98f7;
 }
 
 .colors .option.selected::before {
@@ -150,19 +150,26 @@ section {
 }
 
 .buttons .clear-canvas {
-    color: #6C757D;
-    border: 1px solid #6C757D;
+    color: #6c757d;
+    border: 1px solid #6c757d;
     transition: all 0.3s ease;
 }
+
 .clear-canvas:hover {
     color: #fff;
-    background: #6C757D;
+    background: #6c757d;
 }
+
 .buttons .save-img {
-    background: #4A98F7;
-    border: 1px solid #4A98F7;
+    background: #4a98f7;
+    border: 1px solid #4a98f7;
 }
 
 .drawing-board {
     flex: 1;
+}
+
+.drawing-board canvas {
+    width: 100%;
+    height: 100%;
 }
